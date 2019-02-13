@@ -31,6 +31,8 @@ body{
 	color: #333;
 	background: #fff;
 	text-align: center;
+	-webkit-appearance: none;
+
 }
 
 .wrap {
