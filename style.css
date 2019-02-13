@@ -33,7 +33,6 @@ body{
 	text-align: center;
 }
 
-
 .wrap {
 	overflow: hidden;
 }
@@ -60,7 +59,6 @@ a{
 	-webkit-background-size: cover;
 	-webkit-background-attachment: fixed;
 }
-
 
 
 .copy {
@@ -176,7 +174,6 @@ h3 {
 
 @media (max-width:1000px) {
 	.sec01,.sec02,.sec02b,.sec03,.sec04 {
-		background:none
 		background-position:-20px;
 	}
 	.copy {
@@ -189,23 +186,7 @@ h3 {
 		font-size: 18px;
 		width: 90%;
 	}
-
-	.sec01::before {
-		content:"";
-		display:block;
-		position:fixed;
-		top:0;
-		left:0;
-		z-index:-1;
-		width:100%;
-		height:100vh;
-		background:url(image/bg.jpg) center/cover no-repeat; /*fixedをトル！*/
-		-webkit-background-size:cover;/*Android4*/
-		background-position:-20px;
-
-  }
 }
-
 
 
 /* sec05
