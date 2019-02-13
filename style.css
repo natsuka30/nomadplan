@@ -173,7 +173,7 @@ h3 {
 }
 
 @media (max-width:1000px) {
-	#sec01,#sec02,#sec02b,#sec03,#sec04 {
+	.sec01,.sec02,.sec02b,.sec03,.sec04 {
 		background-position:-20px;
 	}
 	.copy {
@@ -304,7 +304,7 @@ a:active {
 	table {
 		width: 95%;
 		}
-	#sec07 {
+	.sec07 {
 		background-position:-20px;
 		}
 }
@@ -324,3 +324,5 @@ a:active {
 		width: 50vw;
 	}
 }
+
+
