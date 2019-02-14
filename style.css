@@ -176,7 +176,8 @@ h3 {
 
 @media (max-width:1000px) {
 	.sec01,.sec02,.sec02b,.sec03,.sec04 {
-		background-position:-20px;
+		background-position: -20px;
+		background: none;
 	}
 	.copy {
 		font-size: 6vw;
@@ -188,6 +189,20 @@ h3 {
 		font-size: 18px;
 		width: 90%;
 	}
+
+	.sec01:after {/*擬似要素をつくる*/
+		background-image: url('img-sec01.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position:center center;
+		z-index: 1;
+		content: "";
+		-webkit-background-size: cover;
+		-webkit-background-attachment: fixed;
+		position: fixed;/*固定配置*/
+		top: 0; left: 0;/*左上に固定*/
+
 }
 
 
