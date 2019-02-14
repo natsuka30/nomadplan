@@ -177,7 +177,6 @@ h3 {
 @media (max-width:1000px) {
 	.sec01,.sec02,.sec02b,.sec03,.sec04 {
 		background-position: -20px;
-		background: none;
 	}
 	.copy {
 		font-size: 6vw;
