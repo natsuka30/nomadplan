@@ -49,22 +49,17 @@ a{
 /* sec01
 =========================== */
 .sec01 {
-	height: 100vh;
+	width:100vw;
+	height:100vh;
+	background-image: url('img-sec01.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position:center center;
+	z-index: 1;
+	-webkit-background-size: cover;
+	-webkit-background-attachment: fixed;
 }
-
-
-.sec01::before {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100vw;
-    height: 100vh;
-    background: url('img-sec01.jpg') center/cover no-repeat;
-    -webkit-background-size: cover;
-  }
 
 
 .copy {
@@ -200,7 +195,7 @@ h3 {
 }
 
 @media (max-width:1000px) {
-	.sec01,.sec02,.sec02b,.sec03,.sec04 {
+	.sec01,.sec02,.sec02b,.sec03,.sec04 ::before {
 		background-position: -20px;
 	}
 	.copy {
@@ -213,6 +208,20 @@ h3 {
 		font-size: 18px;
 		width: 90%;
 	}
+
+	.sec01::before {
+	    content: "";
+	    display: block;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    z-index: 1;
+	    width: 100vw;
+	    height: 100vh;
+	    background: url('img-sec01.jpg') center/cover no-repeat;
+	    -webkit-background-size: cover;
+		background-position: -20px;
+	  }
 
 }
 
