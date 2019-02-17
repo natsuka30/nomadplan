@@ -59,9 +59,7 @@ a{
     position: fixed;
     top: 0;
     left: 0;
-    -webkit-transform: translate3d(0, 0, -1px);
-    transform: translate3d(0, 0, -1px);
-    z-index: -1;
+    z-index: 1;
     width: 100vw;
     height: 100vh;
     background: url('img-sec01.jpg') center/cover no-repeat;
@@ -83,7 +81,7 @@ a{
 
 
 .sec02::before {/*擬似要素をつくる*/
-/*	width:100vw;
+	width:100vw;
 	background-image: url('img-sec02.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -92,9 +90,9 @@ a{
 	z-index: -1;
 	content: "";
 	-webkit-background-size: cover;
-/*	-webkit-background-attachment: fixed;
+	-webkit-background-attachment: fixed;
 	position: fixed;/*固定配置*/
-/*	top: 0; left: 0;/*左上に固定*/
+	top: 0; left: 0;/*左上に固定*/
 }
 
 
@@ -121,7 +119,7 @@ p {
 }
 
 .sec02b::before {/*擬似要素をつくる*/
-/*	width:100vw;
+	width:100vw;
 	background-image: url('img-sec02.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -132,7 +130,7 @@ p {
 	-webkit-background-size: cover;
 	-webkit-background-attachment: fixed;
 	position: fixed;/*固定配置*/
-/*	top: 0; left: 0;/*左上に固定*/
+	top: 0; left: 0;/*左上に固定*/
 }
 
 .sec02b {
