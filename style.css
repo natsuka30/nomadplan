@@ -47,17 +47,17 @@ a{
 
 /* sec01
 =========================== */
+.parallax {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;    
+}
+
 .sec01 {
 	width:100vw;
 	height:100vh;
 	background-image: url('img-sec01.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position:center center;
-	z-index: 1;
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
 }
 
 
@@ -73,24 +73,18 @@ a{
 /* sec02
 =========================== */
 
-
 .sec02 {
 	width:100vw;
 	background-image: url('img-sec02.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position:center center;
-	z-index: 1;
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
 }
+
 
 .wrapper {
 	background-color:rgba(255,255,255,0.8);
 	width:100vw;
 	display:inline-block;
 	padding: 50px 0;
+	z-index: 2;
 }
 
 h2 {
@@ -112,37 +106,17 @@ p {
 	width: 100vw;
 	height: 70vh;
 	background-image: url('img-sec02.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position:center center;
-	z-index: 1;
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
 }
+
 
 
 /* sec03
 =========================== */
 
-.sec03::before {/*擬似要素をつくる*/
-/*	width:100vw;
-	height:100vh;
-	background-image: url('img-sec03.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position:center center;
-	z-index: -1;
-	content: "";
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
-	position: fixed;/*固定配置*/
-/*	top: 0; left: 0;/*左上に固定*/
-}
-
 .sec03 {
+	width:100vw;
 	height: 100vh;
+	background-image: url('img-sec03.jpg');
 }
 
 
@@ -150,24 +124,10 @@ p {
 /* sec04
 =========================== */
 
-.sec04::before {/*擬似要素をつくる*/
-/*	width:100vw;
-	height:100vh;
-	background-image: url('img-sec03.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position:center center;
-	z-index: -1;
-	content: "";
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
-	position: fixed;/*固定配置*/
-/*	top: 0; left: 0;/*左上に固定*/
-}
-
 .sec04 {
+	width:100vw;
 	height: 100vh;
+	background-image: url('img-sec03.jpg');
 }
 
 h3 {
@@ -195,48 +155,9 @@ h3 {
 		width: 90%;
 	}
 
-	.sec01,.sec02,.sec02b {
-		background: none;
+	.sec01,.sec02,.sec02b,.sec03,.sec04 {
+		background-position:-20px;
 	}
-
-	.sec01::before {
-		background: url('img-sec01.jpg') center/cover no-repeat;
-	    content: "";
-	    display: block;
-	    position: fixed;
-	    z-index: -3;
-	    width: 100vw;
-	    height: 100vh;
-	    -webkit-background-size: cover;
-		background-position: -20px;
-	    top: 0;
-	    left: 0;
-	}
-	.sec02::before {
-		background: url('img-sec02.jpg') center/cover no-repeat;
-	    content: "";
-	    display: block;
-	    position: fixed;
-	    z-index: -2;
-	    top: 100vh;
-	    width: 100vw;
-	    height: 200vh;
-	    -webkit-background-size: cover;
-		background-position: -20px;
-	}
-	.sec02b::after {
-		background: url('img-sec02.jpg') center/cover no-repeat;
-	    content: "";
-	    display: block;
-	    position: fixed;
-	    z-index: -1;
-	    top: 100vh;
-	    width: 100vw;
-	    height: 200vh;
-	    -webkit-background-size: cover;
-		background-position: -20px;
-	}
-
 
 
 }
