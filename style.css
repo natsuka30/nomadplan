@@ -24,285 +24,51 @@ img,abbr,acronym,fieldset{border:0;}
 
 
 body{
-	font: 14px/1.9 游ゴシック,'Noto Sans JP', Arial, Verdana,  YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
-	font-weight: 300;
-	-webkit-text-size-adjust:100%;
-	overflow-x: hidden;
-	color: #333;
-	background: #fff;
-	text-align: center;
+    font: 14px/1.9 游ゴシック,'Noto Sans JP', Arial, Verdana,  YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+    font-weight: 300;
+    -webkit-text-size-adjust:100%;
+    overflow-x: hidden;
+    color: #333;
+    background: #fff;
+    text-align: center;
 
 }
 
 .wrap {
-	overflow: hidden;
-}
-
-a{
-	color: #0066ff;
-	text-decoration: none;
+    overflow: hidden;
 }
 
 
 
-/* sec01
-=========================== */
 .parallax {
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;    
+    min-height: 400px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;    
+}
+.content {
+    padding: 60px;
+    background-color: #fff;
+}
+.parallax.bg-01 {
+    background-image: url(img-sec01.jpg);
+    height: 100vh;
 }
 
-.sec01 {
-	width:100vw;
-	height:100vh;
-	background-image: url('img-sec01.jpg');
-}
 
+.parallax.bg-02 {
+    background-image: url(img-sec02.jpg);
+}
+.parallax.bg-03 {
+    background-image: url(img-sec03.jpg);
+}
 
 .copy {
-	color:#fff;
-	margin: 40vh auto 0;
-	font-size: 40px;
-	display:inline-block;
-}
-
-
-
-/* sec02
-=========================== */
-
-.sec02 {
-	width:100vw;
-	background-image: url('img-sec02.jpg');
-}
-
-
-.wrapper {
-	background-color:rgba(255,255,255,0.8);
-	width:100vw;
-	display:inline-block;
-	padding: 50px 0;
-	z-index: 2;
-}
-
-h2 {
-	font-size:40px;
-
-}
-
-p {
-	font-size: 22px;
-	padding: 10px 20px;
-	font-weight: bold;
-	width: 50%;
-	display: inline-block;
-	text-align: left;
-
-}
-
-.sec02b {
-	width: 100vw;
-	height: 70vh;
-	background-image: url('img-sec02.jpg');
-}
-
-
-
-/* sec03
-=========================== */
-
-.sec03 {
-	width:100vw;
-	height: 100vh;
-	background-image: url('img-sec03.jpg');
-}
-
-
-
-/* sec04
-=========================== */
-
-.sec04 {
-	width:100vw;
-	height: 100vh;
-	background-image: url('img-sec03.jpg');
-}
-
-h3 {
-	font-size: 80%;
-}
-
-
-/* sec01/sec02/sec03/sec04 レスポンシブ
-=========================== */
-@media (min-width:1000px) {
-	h1 br {
-		display: none;
-	}
-}
-
-@media (max-width:1000px) {
-	.copy {
-		font-size: 6vw;
-	}
-	h2 {
-		font-size: 10vw;
-	}
-	p {
-		font-size: 18px;
-		width: 90%;
-	}
-
-	.sec01,.sec02,.sec02b,.sec03,.sec04 {
-		background-position:-20px;
-	}
-
-
-}
-
-
-/* sec05
-=========================== */
-
-.sec05 {
-	background-color: white;
-	margin-bottom: 0;
-}
-
-
-/* sec06
-=========================== */
-.sec06 {
-	background-color: rgba(230,230,230);
-}
-
-.wrapper-table{
-	width:100vw;
-	display:inline-block;
-	padding: 50px 0 75px;
-}
-
-table {
-	background-color: #ffffff;
-	margin: 0 auto;
-}
-
-table th, table td {
-	border: solid 5px rgba(230,230,230);
-	font-size: 22px;
-	padding: 20px;
-	text-align: center;
-	width: 30%;
-	font-weight: bold;
-}
-
-
-/* sec07
-=========================== */
-.sec07::before {/*擬似要素をつくる*/
-/*	width:100vw;
-	background-image: url('img-sec03.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position:center center;
-	z-index: -1;
-	content: "";
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
-	position: fixed;/*固定配置*/
-/*	top: 0; left: 0;/*左上に固定*/
-}
-
-.sec07 {
-	height: 150vh;
-}
-
-.copy p {
-	display: block;
-	width: 100%;
-	text-align: center;
-	padding-bottom: 40vh;
-}
-
-.cv {
-	margin: 12vh 0;
-}
-
-.cv a {
-	background-color: rgba(255,255,255,0.1);
-	padding: 20px 100px;
-	border-radius: 40px;
-	color:#ffffff;
-	font-size:20px;
-	font-weight: bold;
-	box-shadow: 0 5px 5px rgba(255,255,255,0.3);
-	border: 1px solid #ffffff;
-}
-
-a:hover {
-	background-color: rgba(255,255,255,0.8);
-	color: #333;
-}
-
-.cv:active {
-	transform: translate(0,4px);
-	border-bottom: none;
-  }
-
-a:active {
-	box-shadow: 0px 0px rgba(255,255,255,0.3);
-}
-
-/* sec08
-=========================== */
-.sec08 {
-	padding: 40px 0;
-	background-color: white;
-}
-
-
-
-/* sec06/sec07/sec08 レスポンシブ
-=========================== */
-
-@media (min-width:1000px) {
-	table br {
-		display: none;
-	}
-}
-
-@media (min-width:400px) {
-	.br-sp {
-		display:none;
-	}
-}
-
-@media (max-width:1000px) {
-	table {
-		width: 95%;
-		}
-	.sec07 {
-		background-position:-20px;
-		}
-}
-
-@media (max-width:670px) {
-	table th, table td {
-		font-size: 14px;
-		padding: 20px 10px;
-	}
-}
-
-@media (max-width:400px) {
-	.cv a {
-		padding: 20px 40px;
-	}
-	.liverty-logo {
-		width: 50vw;
-	}
+    color:#fff;
+    margin: 40vh auto 0;
+    font-size: 40px;
+    display:inline-block;
 }
 
 
