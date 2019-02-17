@@ -50,7 +50,7 @@ a{
 =========================== */
 
 
-.sec01:before {/*擬似要素をつくる*/
+.sec01::before {/*擬似要素をつくる*/
 	width:100vw;
 	height:100vh;
 	background-image: url('img-sec01.jpg');
@@ -67,7 +67,6 @@ a{
 }
 
 .sec01 {
-	z-index: 1;
 	height: 100vh;
 }
 
@@ -83,18 +82,22 @@ a{
 /* sec02
 =========================== */
 
-.sec02 {
+
+.sec02::before {/*擬似要素をつくる*/
 	width:100vw;
 	background-image: url('img-sec02.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 	background-position:center center;
-	z-index: 1;
+	z-index: -1;
+	content: "";
 	-webkit-background-size: cover;
 	-webkit-background-attachment: fixed;
-	
+	position: fixed;/*固定配置*/
+	top: 0; left: 0;/*左上に固定*/
 }
+
 
 .wrapper {
 	background-color:rgba(255,255,255,0.8);
@@ -118,55 +121,72 @@ p {
 
 }
 
-.sec02b {
-	width: 100vw;
-	height: 70vh;
+.sec02b::before {/*擬似要素をつくる*/
+	width:100vw;
 	background-image: url('img-sec02.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 	background-position:center center;
-	z-index: 1;
+	z-index: -1;
+	content: "";
 	-webkit-background-size: cover;
 	-webkit-background-attachment: fixed;
+	position: fixed;/*固定配置*/
+	top: 0; left: 0;/*左上に固定*/
 }
 
+.sec02b {
+	height: 70vh;
+}
 
 
 /* sec03
 =========================== */
 
-.sec03 {
-	height:100vh;
+.sec03::before {/*擬似要素をつくる*/
 	width:100vw;
-
+	height:100vh;
 	background-image: url('img-sec03.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 	background-position:center center;
-	z-index: 1;
+	z-index: -1;
+	content: "";
 	-webkit-background-size: cover;
 	-webkit-background-attachment: fixed;
-	
+	position: fixed;/*固定配置*/
+	top: 0; left: 0;/*左上に固定*/
 }
+
+.sec03 {
+	height: 100vh;
+}
+
 
 
 /* sec04
 =========================== */
 
-.sec04 {
-	height:100vh;
+.sec04::before {/*擬似要素をつくる*/
 	width:100vw;
+	height:100vh;
 	background-image: url('img-sec03.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 	background-position:center center;
-	z-index: 1;
+	z-index: -1;
+	content: "";
 	-webkit-background-size: cover;
 	-webkit-background-attachment: fixed;
-	
+	position: fixed;/*固定配置*/
+	top: 0; left: 0;/*左上に固定*/
+}
+
+.sec04 {
+	height: 100vh;
 }
 
 h3 {
@@ -238,18 +258,23 @@ table th, table td {
 
 /* sec07
 =========================== */
-.sec07 {
-	height:160vh;
+.sec07::before {/*擬似要素をつくる*/
 	width:100vw;
 	background-image: url('img-sec03.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 	background-position:center center;
-	z-index: 1;
+	z-index: -1;
+	content: "";
 	-webkit-background-size: cover;
 	-webkit-background-attachment: fixed;
-	
+	position: fixed;/*固定配置*/
+	top: 0; left: 0;/*左上に固定*/
+}
+
+.sec07 {
+	height: 150vh;
 }
 
 .copy p {
