@@ -1,131 +1,157 @@
+<!doctype html>
+	<html lang="ja">
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8" />
-<title>Scroll Background Fadein | naoyu.net</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10603270-10"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<head>
 
-  gtag('config', 'UA-10603270-10');
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<style>
-/* init */
-.background {
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    position: fixed;
-    background-position: center center;
-    opacity: 0;
--webkit-background-size: cover;
-        background-size: cover;
--webkit-transition: all 0.5s ease 0s;
-   -moz-transition: all 0.5s ease 0s;
-        transition: all 0.5s ease 0s;
-}
-.show .background { opacity: 1;}
-.contents .wrap {
-    padding: 40vh 0 60vh;
-    position: relative;
-    z-index: 2;
-}
-/* design*/
-#content01_bg {background-image: url(img-sec01.jpg);}
-#content02_bg {background-image: url(img-sec02.jpg);}
-#content03_bg {background-image: url(img-sec03.jpg);}
-.text-box {
-    padding: 50px 25px;
-    max-width: 640px;
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
-}
-#content02 .text-box {
-    margin-left: auto;
-}
-.text-box .catch {
-    margin: 0 0 10px;
-    font-size: 40px;
-}
-.text-box .copy {
-    margin: 0;
-    line-height: 2;
-}
-a{color: #fff;}
-</style>
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>リバ邸ノマドプラン｜「ちょっと、地元いってくる。」</title>
+<link rel="stylesheet" media="all" href="style.css">
 
-<section id="contents">
-    <div id="content01" class="contents">
-        <div id="content01_bg" class="background"></div>
-        <div class="wrap">
-            <div class="text-box">
-                <p class="catch">コンテンツ1</p>
-                <p class="copy">ワシの背景が表示されます</p>
-            </div>
-        </div>
-    </div><!-- content01 -->
-    <div id="content02" class="contents">
-        <div id="content02_bg" class="background"></div>
-        <div class="wrap">
-            <div class="text-box">
-                <p class="catch">コンテンツ2</p>
-                <p class="copy">海の背景が表示されます</p>
-            </div>
-        </div>
-    </div><!-- content02 -->
-    <div id="content03" class="contents">
-        <div id="content03_bg" class="background"></div>
-        <div class="wrap">
-            <div class="text-box">
-                <p class="catch">コンテンツ3</p>
-                <p class="copy">自転車を押す人の背景が表示されます</p>
-                <p><a href="https://naoyu.net/scroll-background-fadein/">記事に戻る</a></p>
+<link rel="shortcut icon" href="./assets/images/favicon.ico">
 
-                <div class="ad" style="text-align: center;">
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- naoyunet sampleページ -->
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-7408088410773034"
-                     data-ad-slot="5732846980"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                </div>
-            </div>
-        </div>
-    </div><!-- content03 -->
+<meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="description" content="もどかしいお金のやりとりを楽しく。シェアハウスの家賃の回収をスムーズにして、家事をやってくれたら感謝を送り、受け取ることができるサービスです。">
+<meta property="og:title" content="お金のやりとりをもっと楽しくする「Moai」">
+<meta property="og:description" content="もどかしいお金のやりとりを楽しく。シェアハウスの家賃の回収をスムーズにして、家事をやってくれたら感謝を送り、受け取ることができるサービスです。">
+<meta property="og:type" content="website"><meta property="og:url" content="https://moai.at/">
+<meta property="og:site" content="">
+<meta property="og:image" content="https://moai.at/assets/images/ogp-facebook.jpg">
+<meta property="og:reverse" content="true"><meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://moai.at/assets/images/ogp-twitter.jpg">
+<meta name="twitter:description" content="もどかしいお金のやりとりを楽しく。シェアハウスの家賃の回収をスムーズにして、家事をやってくれたら感謝を送り、受け取ることができるサービスです。">
+
+
+
+	</head>
+
+
+
+	<body>
+
+<div class="wrap">
+
+<!-- ファーストビュー -->
+<section class="sec01">
+	<div class="copy">
+		<h1>あなたにとって、<br>
+		地元ってなんですか？</h1>
+	</div>
+</section>
+<!-- ファーストビュー -->
+
+<!-- ビジョン // -->
+<section class="sec02">
+	<div class="wrapper">
+			<h2>地元 と 居場所</h2>
+		<p class="vision">
+多拠点とは、ただ物件をたくさん所有していることではないと考えています。全国各地に拠点となる場を持っていても、帰る理由がなければ人は足を運ばないからです。 では、人は一体なにをもって「拠点」と呼ぶのか。リバ邸では拠点を「地元（「ただいま」といえる場所）」と、定義しました。ただいまと言える居場所は、人によって違います。なつかしい匂い、必ず立ち寄る居酒屋、昔の笑い話を何度でもできる仲間の存在。こうした記憶や価値観を積み重ねた、「ただいま」と言える居場所がひとつではない、それがリバ邸の考える”多拠点生活”です。これは全国各地の宿泊施設を渡り歩く“旅生活”とは異なるものです。
+
+		</p>
+	</div>
+</section>
+<!-- // ビジョン // -->
+
+<section class="sec02b">
+	<div class="wrapper-sec02">
+	</div>
 </section>
 
-<script>
-$(function(){
-    $('.contents').each(function(i, elem){
-        var contentsPOS = $(elem).offset().top;
-        $(window).on('load scroll resize', function(){
-            var winHeight = $(window).height();
-            var scrollTop = $(window).scrollTop();
-            var showClass = 'show';
-            var timing = 100;
-            if (scrollTop >= contentsPOS - winHeight + timing){
-              $(elem).addClass(showClass);
-            } else {
-              $(elem).removeClass(showClass);
-            }
-        });
-    });
-});
-</script>
+<!-- // コンセプト // -->
+<section class="sec03">
+	<div class="wrapper">
+			<h2>ただいま と おかえり</h2>
+		<p class="concept">
+リバ邸には「準住民制度」というものがあり、準住民制度を取り入れているリバ邸には住んでいる人だけではなく、”たまに住んでいる人”がいます。都心にいる方には、地方での第2の地元となる安心の場を。地方にいる方には、都心での第2の地元となる刺激の場を。準住民制度は都心と地方の2極対立の関係性を曖昧にし、自分がほしい環境をどちらからも手に入れられる仕組みです。
 
-</body>
-</html>
+		</p>
+	</div>
+</section>
+<!-- // コンセプト // -->
+
+
+<!-- // アイキャッチ // -->
+<section class="sec04">
+	<div class="copy">
+		<h1>「ちょっと、地元いってくる。」</h1>
+		<h3>＃リバ邸ノマドプラン</h3>
+	</div>
+</section>
+<!-- // アイキャッチ // -->
+
+
+<!-- // サービス概要 // -->
+<section class="sec05">
+	<div class="wrapper">
+			<h2>SERVICE</h2>
+		<p class="service">
+			リバ邸ノマドプランとは、月額1万円〜で、全国に展開するリバ邸の準住民として体験居住ができるようになるサブスクリプションプランです。地元や自宅以外にも、「ただいま」と言える居場所を。リバ邸ノマドプランはあなたの”第2の地元づくり”をサポートします。
+		</p>
+	</div>
+</section>
+<!-- // サービス概要 // -->
+
+
+<!-- // 料金形態 // -->
+<section class="sec06">
+	<div class="wrapper-table">
+			<h2>PRICE</h2>
+
+<!-- // 表 // -->
+<table border="3">
+<tr>
+    <th>対象</th><th>日数</th><th>価格</th>
+</tr>
+<tr>
+    <td>リバ邸住民<br>・準住民</td><td>〜10日／月</td><td>10,000円</td>
+</tr>
+<tr>
+    <td>一般</td><td>〜10日／月</td><td>20,000円</td>
+</tr>
+<tr>
+    <td rowspan="2">追加<br>オプション</td><td>＋5日</td><td rowspan="2">5,000円</td>
+</tr>
+<tr>
+	<td>＋1ヶ所</td>
+</tr>
+</table>
+<!-- // 表 // -->
+
+	</div>
+</section>
+<!-- // 料金形態 // -->
+
+
+
+<!-- // クロージング // -->
+<section class="sec07">
+	<div class="copy">
+		<p>今いる地元から、<br class="br-sp">もうひとつの地元へ。</p>
+		<h1>「ちょっと、地元いってくる。」</h1>
+		<h3>#リバ邸ノマドプラン</h3>
+	</div>
+
+<!-- // CVボタン // -->
+		<div class="cv">
+		<a href="" class="cv-botton">お申し込みはこちら</a>
+	</div>
+<!-- // CVボタン // -->
+
+</section>
+<!-- // クロージング // -->
+
+
+
+<!-- // フッター // -->
+<section class="sec08">
+		<img src="logo.png" class="liverty-logo" width=250px>
+</section>
+<!-- // フッター // -->
+
+<!-- /.wrap --></div>
+
+
+	</body>
+	</html>
