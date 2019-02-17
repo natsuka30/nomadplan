@@ -209,6 +209,9 @@ h3 {
 		width: 90%;
 	}
 
+	.sec01 {
+		background: none;
+	}
 	.sec01::before {
 	    content: "";
 	    display: block;
