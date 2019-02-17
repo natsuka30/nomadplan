@@ -61,9 +61,8 @@ a{
 
 .sec01-back {
 	background-color: rgba(0,0,0,0.6);
-	height: 200vh;
+	height: 100vh;
 	width: 100vw;
-	top: -100vh;
 }
 
 
