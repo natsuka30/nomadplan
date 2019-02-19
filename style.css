@@ -37,6 +37,20 @@ body{
 	overflow: hidden;
 }
 
+.wrap::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: url(img-sec03.jpg) center/cover no-repeat;
+    -webkit-background-size: cover;
+}
+
+
 a{
 	color: #0066ff;
 	text-decoration: none;
@@ -49,15 +63,9 @@ a{
 
 .sec01 {
 	width:100vw;
-	height:100vh;
-	background-image: url('img-sec03.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position:center center;
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;	
+	height:100vh;	
 }
+
 
 .sec01-back {
 	background-color: rgba(0,0,0,0.6);
@@ -79,39 +87,29 @@ a{
 =========================== */
 
 .sec02 {
-	width:100vw;
-	background-image: url('img-sec03.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position:center center;
-	z-index: 1;
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
-	
+	width:100vw;	
 }
 
 .sec02-back {
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.3);
 	width: 100vw;	
-	height: 100vh;
+	height: 70vh;
 }
 
 .wrapper {
 	background-color:rgba(255,255,255,0.8);
 	width:100vw;
 	display:inline-block;
-	padding: 50px 0;
 }
 
 h2 {
 	font-size:40px;
-
+	padding: 50px 0;
 }
 
 p {
 	font-size: 22px;
-	padding: 10px 20px;
+	padding: 0 20px 70px;
 	font-weight: bold;
 	width: 50%;
 	display: inline-block;
@@ -122,18 +120,10 @@ p {
 .sec02b {
 	width: 100vw;
 	height: 70vh;
-	background-image: url('img-sec03.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position:center center;
-	z-index: 1;
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
 }
 
 .sec02b-back {
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.3);
 	width: 100vw;	
 	height: 70vh;
 }
@@ -145,16 +135,6 @@ p {
 .sec03 {
 	height:100vh;
 	width:100vw;
-
-	background-image: url('img-sec03.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position:center center;
-	z-index: 1;
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
-	
 }
 
 
@@ -163,16 +143,7 @@ p {
 
 .sec04 {
 	height:100vh;
-	width:100vw;
-	background-image: url('img-sec03.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position:center center;
-	z-index: 1;
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
-	
+	width:100vw;	
 }
 
 h3 {
@@ -189,35 +160,7 @@ h3 {
 }
 
 @media (max-width:1000px) {
-	.sec01,.sec02,.sec02b,.sec03,.sec04 {
-		background: none;
-	}
-	.copy {
-		font-size: 6vw;
-	}
-	h2 {
-		font-size: 10vw;
-	}
-	p {
-		font-size: 18px;
-		width: 90%;
-	}
-	/*
-	.sec01::before {
-	  content: "";
-	  display: block;
-	  position: fixed;
-	  top: 0;
-	  left: 0;
-	  z-index: -1;
-	  width: 100%;
-	  height: 100%;
-	  background: url(img-sec03.jpg) center/cover no-repeat;
-	  -webkit-background-size: cover;
-	  background-position:-20px;
-	}
-	*/
-	.sec01::before {
+	.wrap::before {
 	    content: "";
 	    display: block;
 	    position: fixed;
@@ -230,7 +173,16 @@ h3 {
 	    -webkit-background-size: cover;
 	    background-position: -20px;
 	}
-
+	.copy {
+		font-size: 6vw;
+	}
+	h2 {
+		font-size: 10vw;
+	}
+	p {
+		font-size: 18px;
+		width: 90%;
+	}
 }
 
 
@@ -253,7 +205,7 @@ h3 {
 .wrapper-table{
 	width:100vw;
 	display:inline-block;
-	padding: 50px 0 75px;
+	padding: 0 0 75px;
 }
 
 table {
@@ -276,14 +228,6 @@ table th, table td {
 .sec07 {
 	height:160vh;
 	width:100vw;
-	background-image: url('img-sec03.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position:center center;
-	z-index: 1;
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
 	
 }
 
@@ -299,7 +243,7 @@ table th, table td {
 }
 
 .cv a {
-	background-color: rgba(255,255,255,0.1);
+	background-color: rgba(3,3,3,0.4);
 	padding: 20px 100px;
 	border-radius: 40px;
 	color:#ffffff;
