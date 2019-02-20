@@ -138,6 +138,7 @@ p {
 
 .sec03 {
 	height:100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	width:100vw;
 }
 
@@ -246,10 +247,15 @@ table th, table td {
 	width: 90%;
 	text-align: center;
 	padding-bottom: 40vh;
+	padding-bottom: calc(var(--vh, 1vh) * 40);
+
+
 }
 
 .cv {
 	margin: 12vh 0;
+	margin-top: calc(var(--vh, 1vh) * 12);
+	margin-bottom: calc(var(--vh, 1vh) * 12);
 }
 
 .cv a {
