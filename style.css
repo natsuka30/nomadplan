@@ -236,6 +236,7 @@ table th, table td {
 =========================== */
 .sec07 {
 	height:160vh;
+	height: calc(var(--vh, 1vh) * 160);
 	width:100vw;
 	
 }
