@@ -78,6 +78,7 @@ a{
 .copy {
 	color:#fff;
 	margin: 40vh auto 0;
+	margin-top: calc(var(--vh, 1vh) * 40);
 	font-size: 40px;
 	display:inline-block;
 	text-shadow: 1px 2px 1px #333;
@@ -146,6 +147,7 @@ p {
 
 .sec04 {
 	height:100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	width:100vw;	
 }
 
